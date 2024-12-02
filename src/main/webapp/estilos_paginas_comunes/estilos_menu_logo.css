@@ -1,0 +1,481 @@
+
+/*ESTILOS GENÉRICOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MiFuenteBacasimeAntique-Regular'; /* Nombre que le das a la fuente */
+    src: url('fuentes_paginas_comunes/BacasimeAntique-Regular.ttf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+
+@font-face {
+    font-family: 'MiFuentePizza'; /* Nombre que le das a la fuente */
+    src: url('fuentes_paginas_comunes/Pizza.ttf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+/*ESTILOS GENÉRICOS FIN*/
+
+/*ESTILOS LISTAS*/
+ul, ol{
+
+    list-style: none;
+
+}
+/*ESTILOS LISTAS FIN*/
+
+/*ESTILOS PARA EL CONTENEDOR DEL NAVEGADOR*/
+.contenedor-navegador{
+
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(1,1,1,1);
+    position:fixed;
+    top:0;
+    z-index: 1000;
+
+}
+/*ESTILOS PARA EL CONTENEDOR DEL NAVEGADOR FIN*/
+
+/*ESTILOS LOGO Y TOOGLE*/
+.row-navegador{
+
+    width: 95%;
+    margin: auto;
+}
+
+/*logo pizzeria*/ /*logo pizzeria*//*logo pizzeria*//*logo pizzeria*//*logo pizzeria*/ /*logo pizzeria*/ /*logo pizzeria*/ /*logo pizzeria*/
+
+.columna-logo{
+
+    height: 10vh;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.pizza-icon{
+
+    width:  50%;
+    height: 10vh;
+    line-height: 10vh;
+    
+}
+
+.pizza-icon .parrafo-pizza{
+
+    font-size: 96px;
+    font-family: MiFuentePizza;
+    text-align: right;    
+    color: rgba(255,126,5,1);
+}
+
+.div-logo-nav{
+
+    width: 50%;
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    
+}
+
+.div-logo-nav .p1{
+
+    width: 100%;
+    height:7vh;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.div-logo-nav p{
+
+
+    font-size: 12px;
+    text-align: justify;    
+    height: 3vh;
+    line-height: 3vh;
+    margin-bottom: 0;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+
+}
+
+.toogle{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12%;
+    margin: auto;
+    padding: 0;
+    height: 8vh;
+    background-color: rgba(1,1,1,1) ;    
+    border: 0.1px solid rgba(255,126,5,0.6);
+    backdrop-filter: blur(1px);
+    border-radius: 7px;
+    display: none;
+}
+
+.toogle i{
+
+    font-size: 20px;
+    color: rgba(255,126,5,1);
+
+}
+
+/*ESTILOS LOGO Y TOOGLE FIN*/
+/*logo pizzeria*/ /*logo pizzeria*//*logo pizzeria*//*logo pizzeria*//*logo pizzeria*/ /*logo pizzeria*/ /*logo pizzeria*/ /*logo pizzeria*/
+
+/*ESTILOS ITEMS NAVEGADOR*/
+
+.columna-navegador-seisitems2{
+
+    width: 100%;      
+        
+}
+
+.columna-navegador-seisitems2 .container-fluid{
+
+    width: 80%;
+    margin-left: 20%;
+    
+}
+
+/*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/
+
+/*contenedor indivual de cada item boostrap*/
+.columna-items-menu{
+
+    height: 10vh;
+ 
+}
+/*contenedor indivual de cada item boostrap*/
+
+/*contenedor indivual para ul*/
+.div-texto-menu{
+
+    width: 100%;
+    height: 100%;
+
+}
+/*contenedor indivual para ul*/
+
+/* ul, lista padre*/
+.lista-padre{
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+        
+}
+
+.lista-padre .lista-hijo{
+
+    width: 100%;
+    height: 100%;
+    line-height: 100%;       
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lista-padre .lista-hijo a{
+    
+    display: block;
+    font-family: MiFuenteBacasimeAntique-Regular;
+    color:rgba(255,126,5,1);
+    font-weight: lighter;
+    text-align: center;
+    font-size: 21px;
+    width: 100%;
+    text-decoration: none;
+}
+
+/*estilos sub menus */
+.lista-padre li ul{
+
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.columna-items-menu:hover .link-menu-item{
+
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.lista-padre li:hover > ul{
+
+    width: 100%;
+    display: block;
+    top:100%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+}
+
+/*estilos sub menus */
+
+.lista-hijo ul li{
+
+    width: 100%;
+    margin: auto;
+    height: 7vh;
+    min-height: 7vh;
+    max-height: 7vh;
+    background-color: rgba(0,0,0,1);
+    border: 1px solid rgba(255,126,5,1);   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-hijo ul li a{
+
+    display: block;
+    text-decoration: none;
+    font-family: MiFuenteBacasimeAntique-Regular;
+    color:rgba(255,126,5,1);
+    font-weight: lighter;
+    text-align: center;
+    font-size: 21px;
+
+}
+
+.lista-hijo ul li:hover a{
+
+    font-size: 25px;
+    color: white;
+
+}
+
+.icono-carrito a > span{
+    
+    font-size: 24px;    
+    padding-left: 5px;
+}
+
+/*imagen*/
+
+/*
+.div-imagen-menu{
+
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+
+}
+*/
+/*
+.columna-items-menu:hover .div-imagen-menu{
+
+    display: block;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 8px 0px 25px 10px rgba(1,1,1,0.7),-8px 0px 25px 10px rgba(1,1,1,0.7);
+    backdrop-filter: blur(1px);
+
+} */
+
+/*ESTILOS ITEMS NAVEGADOR FIN*/
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+    .row-navegador{
+
+        width: 100%;
+
+    }
+
+
+    .pizza-icon{
+
+        width:  28%;
+
+    }
+
+    .pizza-icon .parrafo-pizza{
+
+        font-size: 98px;
+
+    }
+    
+    .div-logo-nav{
+
+
+        width: 60%;   
+        align-items: center;
+
+
+    }
+
+    .div-logo-nav .p1{
+
+        font-size: 22px;
+        text-align: center;
+        line-height: 7vh;
+
+    }
+
+    .div-logo-nav p{
+
+        font-size: 14px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+
+    }
+
+ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/
+    .toogle{
+
+        display: initial;
+        position: relative;
+        left: 0px;
+
+    }
+
+    .columna-todos-items-nav{
+
+        display: none;
+        
+    }
+
+    .containervisible{
+
+        display: initial;
+
+    }
+/*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/ /*TOOGLE*/
+
+/*OPCIONES DE MENÚ*/ /*OPCIONES DE MENÚ*/ /*OPCIONES DE MENÚ*/ /*OPCIONES DE MENÚ*/ /*OPCIONES DE MENÚ*/ /*OPCIONES DE MENÚ*/ 
+
+/*ESTILOS ITEMS NAVEGADOR*/
+
+.columna-navegador-seisitems2{
+
+    width: 100%;      
+        
+}
+
+.columna-navegador-seisitems2 .container-fluid{
+
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+/*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/ /*ITEMS MENU*/
+
+/*contenedor indivual de cada item boostrap*/
+.columna-items-menu{
+
+    height: 10vh;
+    background-color: black;
+}
+/*contenedor indivual de cada item boostrap*/
+
+.contenedor-menu-vacio{
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
+
+/*contenedor indivual para ul*/
+
+/*contenedor indivual para ul*/
+
+/* ul, lista padre*/
+
+
+
+/*estilos sub menus */
+.lista-padre li ul{
+
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+.lista-padre li:hover > ul{
+
+    width: 100%;
+    display: block;
+    top:100%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+}
+
+/*estilos sub menus */
+
+/*imagen*/
+
+/*
+.div-imagen-menu{
+
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+
+}
+*/
+/*
+.columna-items-menu:hover .div-imagen-menu{
+
+    display: block;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 8px 0px 25px 10px rgba(1,1,1,0.7),-8px 0px 25px 10px rgba(1,1,1,0.7);
+    backdrop-filter: blur(1px);
+
+} */
+
+/*ESTILOS ITEMS NAVEGADOR FIN*/
+
+
+
+
+}
+
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

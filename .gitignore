@@ -1,0 +1,26 @@
+# Ignorar archivos compilados
+*.class
+*.jar
+*.war
+
+# Ignorar carpetas generadas por herramientas de construcción
+/build/
+/target/
+
+# Ignorar configuraciones del IDE
+*.iml
+.idea/
+*.classpath
+*.project
+*.settings/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar logs
+*.log
+
+# Ignorar configuraciones locales de entorno
+*.env
+*.properties

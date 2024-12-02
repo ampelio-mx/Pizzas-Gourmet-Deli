@@ -1,0 +1,465 @@
+
+/*ESTILOS GENÉRICOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'MiFuenteCreativo'; /* Nombre que le das a la fuente */
+    src: url('Creativo Italic.otf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+
+
+/*ESTILOS GENÉRICOS FIN*/
+
+/*ESTILOS PARA CONTENEDOR QUIENES SOMOS, MISION Y VISION*/
+
+.clase-container-padre-quienes-somos{
+    
+    width: 100%;    
+    position: relative;  
+    top:10vh;
+}
+
+
+
+.contenedor-quienes-somos-imagen{
+       
+    position: absolute;
+    top: 10%;
+    left: -10%;    
+    height: 57%;    
+    z-index: 99;
+}
+
+.row >.contenedor-quienes-somos-imagen{
+    width: 50%;
+} 
+
+.contenedor-quienes-somos-imagen-giratoria{
+    
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    transform-origin: center;
+    animation: girar 70s infinite linear;
+    
+}
+
+@keyframes girar{    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+/*ESTILOS PARA CONTENEDOR QUIENES SOMOS, MISION Y VISION*/
+
+/*ESTILOS PARA CONTENEDOR QUIENES SOMOS*/
+/*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/
+
+.contenedor-quienes-somos{
+
+    height: 90vh;    
+    background-color: rgba(1,1,1,1);
+    background-image: linear-gradient(90deg, rgba(1,1,1,1)20%, rgba(1,1,1,0.5)70%,rgba(255,255,255,0.7)100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.conte-image-back-sup{
+    
+    width: 20vw;
+    height: 90vh;
+    position: absolute;
+    top: 0vh;
+    left: 80vw;
+    background-image: url(../imagenes_vistas/fondo_cards_borderwhite_sup.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contenedor-quienes-somos-titulo{
+
+    width: 38%;
+    height: 20%;
+    position: absolute;
+    top:6%;
+    left: 24%;
+    background-color: rgba(25,25,25,0.2);
+    /*border: 0.5px solid rgba(255,255,255,1);*/
+    border-radius: 25px;
+
+}
+
+.contenedor-quienes-somos-titulo h1{
+    
+    font-family: MiFuenteCreativo;
+    font-size: 62px;
+    color: rgba(255,126,5,1);
+    text-align: center;
+    line-height: 2;
+    text-shadow: 2px 2px 4px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.9px rgba(255,255,255,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.9px 2px rgba(255,255,255,1);
+}
+
+.contenedor-quienes-somos-texto{
+
+    width: 55%;
+    height: 45%;
+    position: absolute;
+    top:30%;
+    left: 40%;
+    background-color: rgba(25,25,25,0.3);
+    /*border: 1px solid rgba(255,255,255,1);*/
+    border-radius: 25px;
+    padding: 2%;
+
+}
+
+.contenedor-quienes-somos-texto p{
+    
+    font-family: MiFuenteCreativo;
+    font-size: 26px;
+    color: rgba(255,255,255,1);
+    text-align: justify;
+    line-height: 2;
+    text-shadow: 2px 2px 4px rgba(2,126,222,0.7);
+    -webkit-text-stroke: 0.5px rgba(255,126,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,126,5,1);
+    
+    
+}
+
+.contenedor-quienes-somos-titulo-mision{
+
+    width: 18%;
+    height: 16%;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    background-color: rgba(25,25,25,0.2);
+    /*border: 0.5px solid rgba(255,255,255,1);*/
+    border-radius: 25px;
+
+}
+
+.contenedor-quienes-somos-titulo-mision h1{
+    
+    font-family: MiFuenteCreativo;
+    font-size: 60px;
+    color: rgba(255,126,5,1);
+    text-align: center;
+    line-height: 2;
+    text-shadow: 2px 2px 4px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.9px rgba(255,255,255,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.9px 2px rgba(255,255,255,1);
+}
+
+/*ESTILOS PARA CONTENEDOR QUIENES SOMOS*/
+/*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/
+
+
+/*ESTILOS PARA CONTENEDOR MISION Y VISION*/
+/*CONTENEDOR MISION Y VISION*/ /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/ 
+
+.contenedor-mision-vision{
+
+    
+    height: 90vh;    
+    background-color: rgba(1,1,1,1);
+    background-image: linear-gradient(90deg, rgba(1,1,1,1)20%, rgba(1,1,1,0.5)70%,rgba(255,255,255,0.7)100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.conte-image-back-inf{
+    
+    width: 40vw;
+    height: 90vh;
+    position: absolute;
+    top: 0vh;
+    left: 60vw;
+    background-image: url(../imagenes_vistas/fondo_cards_borderwhite_inf.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contenedor-mision-vision-texto-mision{
+
+    width: 45%;
+    height: 35%;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    background-color: rgba(25,25,25,0.3);
+    /*border: 1px solid rgba(255,255,255,1);*/
+    border-radius: 25px;
+    padding: 2%;
+
+}
+
+.contenedor-mision-vision-texto-mision p{
+    
+    font-family: MiFuenteCreativo;
+    font-size: 26px;
+    color: rgba(255,255,255,1);
+    text-align: justify;
+    line-height: 2;
+    text-shadow: 2px 2px 4px rgba(2,126,222,0.7);
+    -webkit-text-stroke: 0.5px rgba(255,126,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,126,5,1);
+      
+}
+
+.contenedor-mision-vision-titulo-vision{
+
+    width: 18%;
+    height: 16%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-color: rgba(25,25,25,0.2);
+    /*border: 0.5px solid rgba(255,255,255,1);*/
+    border-radius: 25px;
+
+}
+
+.contenedor-mision-vision-titulo-vision h1{
+    
+    font-family: MiFuenteCreativo;
+    font-size: 60px;
+    color: rgba(255,126,5,1);
+    text-align: center;
+    line-height: 2;
+    text-shadow: 2px 2px 4px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.9px rgba(255,255,255,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.9px 2px rgba(255,255,255,1);
+}
+
+.contenedor-mision-vision-texto-vision{
+
+    width: 55%;
+    height: 45%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-color: rgba(25,25,25,0.3);
+    /*border: 1px solid rgba(255,255,255,1);*/
+    border-radius: 25px;
+    padding: 2%;
+
+}
+
+.contenedor-mision-vision-texto-vision p{
+    
+    font-family: MiFuenteCreativo;
+    font-size: 26px;
+    color: rgba(255,255,255,1);
+    text-align: justify;
+    line-height: 2;
+    text-shadow: 2px 2px 4px rgba(2,126,222,0.7);
+    -webkit-text-stroke: 0.5px rgba(255,126,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,126,5,1);
+      
+}
+    
+/*ESTILOS PARA CONTENEDOR MISION Y VISION*/
+/*CONTENEDOR MISION Y VISION*/ /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/ 
+
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+    /*ESTILOS PARA CONTENEDOR QUIENES SOMOS, MISION Y VISION*/
+
+.contenedor-quienes-somos-imagen{
+       
+    position: absolute;
+    top: 33%;
+    left: -40%;    
+    height: 27%;    
+    z-index: 99;    
+}
+
+.row >.contenedor-quienes-somos-imagen{
+    width: 87%;
+} 
+
+.contenedor-quienes-somos-imagen-giratoria{
+    
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    transform-origin: center;
+    animation: girar 70s infinite linear;
+    
+}
+
+@keyframes girar{    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+/*ESTILOS PARA CONTENEDOR QUIENES SOMOS, MISION Y VISION*/
+
+/*ESTILOS PARA CONTENEDOR QUIENES SOMOS*/
+/*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/
+
+.contenedor-quienes-somos-titulo{
+
+    width: 90%;
+    height: 15%;    
+    top:5%;
+    left: 5%;    
+    border-radius: 20px;
+
+}
+
+.contenedor-quienes-somos-titulo h1{
+    
+    font-size: 40px;
+    text-shadow: 1px 2px 2px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.5px rgba(255,255,255,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,255,255,1);
+}
+
+.contenedor-quienes-somos-texto{
+
+    width: 90%;
+    height: 40%;
+    top:25%;
+    left: 5%;
+    border-radius: 20px;
+    padding: 4%;
+
+}
+
+.contenedor-quienes-somos-texto p{
+    
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgba(2,126,222,0.9);
+    -webkit-text-stroke: 0.3px rgba(255,126,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(255,126,5,1);
+        
+}
+
+.contenedor-quienes-somos-titulo-mision{
+
+    width: 44%;
+    height: 14%;
+    position: absolute;
+    top: 76%;
+    left: 50%;    
+    border-radius: 20px;
+
+}
+
+.contenedor-quienes-somos-titulo-mision h1{
+    
+    font-size: 40px;
+    color: rgba(255,126,5,1);
+    text-shadow: 1px 2px 2px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.5px rgba(255,255,255,1);; /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,255,255,1);
+}
+
+/*ESTILOS PARA CONTENEDOR QUIENES SOMOS*/
+/*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/ /*CONTENEDOR QUIENES SOMOS*/
+
+
+/*ESTILOS PARA CONTENEDOR MISION Y VISION*/
+/*CONTENEDOR MISION Y VISION*/ /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/ 
+
+.contenedor-mision-vision-texto-mision{
+
+    width: 65%;
+    height: 35%;
+    top: 0%;
+    left: 35%;
+    border-radius: 20px;
+    
+}
+
+.contenedor-mision-vision-texto-mision p{
+    
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgba(2,126,222,0.9);
+    -webkit-text-stroke: 0.3px rgba(255,126,5,1);; /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(255,126,5,1);
+      
+}
+
+.contenedor-mision-vision-titulo-vision{
+
+    width: 35%;
+    height: 14%;
+    top: 60%;
+    left: 0%;    
+    border-radius: 20px;
+    
+}
+
+.contenedor-mision-vision-titulo-vision h1{
+    
+    font-size: 40px;
+    text-align: center;
+    line-height: 2;
+    text-shadow: 1px 2px 2px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.5px rgba(255,255,255,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,255,255,1);
+}
+
+.contenedor-mision-vision-texto-vision{
+
+    width: 65%;
+    height: 65%;
+    top: 35%;
+    left: 35%;
+    border-radius: 20px;
+    padding: 3%;
+
+}
+
+.contenedor-mision-vision-texto-vision p{
+     
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgba(2,126,222,0.9);
+    -webkit-text-stroke:  0.3px rgba(255,126,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(255,126,5,1);
+      
+}
+    
+/*ESTILOS PARA CONTENEDOR MISION Y VISION*/
+/*CONTENEDOR MISION Y VISION*/ /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/  /*CONTENEDOR MISION Y VISION*/ 
+
+
+}
+
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+

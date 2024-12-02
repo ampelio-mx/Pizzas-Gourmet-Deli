@@ -1,0 +1,1249 @@
+
+/*ESTILOS GENÉRICOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MiFuenteDDayStenceil'; /* Nombre que le das a la fuente */
+    src: url('../estilos_paginas_comunes/fuentes_paginas_comunes/ESNRAZ-DDayStencil.ttf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+@font-face {
+    font-family: 'MiFuenteJamesStroker'; /* Nombre que le das a la fuente */
+    src: url('../estilos_paginas_comunes/fuentes_paginas_comunes/ESNRAZ-JamesStroker.ttf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+/*ESTILOS GENÉRICOS FIN*/
+
+/*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/
+body{
+    
+   position: relative;  
+}
+
+#contenedor-spinner-pizzas{
+    
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.7);
+    display: block;
+    z-index: 12;
+    
+}
+
+#pizza-loading-indicator {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pizza-loading-indicator p{
+
+    font-size: 14px;
+    color: orange;
+    z-index: 1;
+
+}
+
+.spinner {
+    border: 4px solid rgba(255,85,6,0.2);
+    border-top: 4px solid rgba(255,85,6,1); /* Color del spinner */
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    animation: spin 2s linear infinite;
+    z-index: 1;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.contenedor-de-cards{
+
+    width: 100%;  
+    margin-top: 10vh;
+    background-color: transparent;
+    position: relative;
+
+
+}
+
+.columna-contenedor-cards{
+  
+}
+/*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ 
+
+
+
+/*ESTILOS PARA EL FONDO FIGURAS PIZZA*/
+.fondo-de-tarjetas-blanco{
+    
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    background: rgba(255,156,95,1);
+    background-image: url("../imagenes_vistas/fondo_cards_borderwhite_relleno.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+/*ESTILOS PARA EL FONDO FIGURAS PIZZA*/
+
+
+/*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/
+
+.columna-contenedor-de-titulo-tarjetas{
+
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    background: rgba(255,156,95,1);
+}
+
+.columna-contenedor-de-titulo-tarjetas h2{
+
+    font-size: 100px;
+    font-family: MiFuenteDDayStenceil;    
+    color: rgba(235,235,235,1);
+    -webkit-text-stroke: 1px rgba(100,100,100,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 1px 2px rgba(100,100,100,1);
+    letter-spacing: 12px;
+    word-spacing: 12px;
+    line-height: 1;
+    
+}
+
+
+/*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/
+
+
+/*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ 
+
+.contenedor-cards-cuatro-cards{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+   
+}
+
+.fila-contenedor-cards-cuatro-cards{
+
+    width: 90%;
+    margin: auto;
+}
+
+.columna-contenedor-de-tarjetas{
+
+    height: 65vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.columna-nombre-de-cada-pizza{
+
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}   
+
+.columna-nombre-de-cada-pizza h2{
+
+    color: olive;
+    font-family: MiFuenteJamesStroker;
+    font-size: 42px;
+    text-align: center;
+    margin: 0;
+    -webkit-text-stroke: 0.5px rgba(255,255,255,0.7); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,255,255,0.7);
+    line-height: 1;
+
+}
+
+.columna-descripcion-de-cada-pizza{
+    
+   width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna-descripcion-de-cada-pizza p{
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0;
+
+}
+
+.contenedor-de-cada-tarjeta{
+
+    width: 80%;
+    height: 62%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.5),rgba(215,215,215,0.3));    
+
+}
+
+.sub-contenedor-de-cada-tarjeta{
+
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedor-de-imagen-para-card{
+
+    width: 100%;
+    height: 75%;    
+    background-image: radial-gradient(circle at bottom, rgba(255,255,115,0.5)60%,rgba(255,56,5,0.7)90%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.contenedor-de-imagen-para-card img{
+
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+}
+
+.contenedor-de-opciones-tarjeta{
+
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;       
+    background-image: radial-gradient(ellipse at top, rgba(255,255,115,1)0%,rgba(255,126,5,1)70%); 
+       
+}
+
+/*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ 
+.contenedor-de-tamano-tarjeta {
+
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255,255,255,0); 
+    border-bottom: 1px solid rgba(255,86,5,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.contenedor-de-tamano-tarjeta-label-uno{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,86,5,1);
+    padding: 0;
+}
+
+
+.contenedor-de-tamano-tarjeta-label-uno .contenedor-de-tamano-tarjeta-label-uno-p{
+
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke: 0.3px rgba(5,5,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(5,5,5,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+    padding-left: 5px
+}
+
+.contenedor-de-tamano-tarjeta-label-dos{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.contenedor-de-tamano-tarjeta-label-dos form{
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 0;
+}
+
+#formTamanio{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.drop-down-list,
+.contenedor-de-tamano-tarjeta-label-dos-p{
+
+    font-size: 16px;
+
+}
+
+.contenedor-de-tamano-tarjeta-label-dos select{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,1);
+
+}
+/*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/
+
+
+/*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/
+
+.contenedor-de-precio-tarjeta{
+
+    width: 100%;
+    height: 33.33%;
+    background-color: rgba(255,255,255,0); 
+    border-bottom: 1px solid rgba(255,86,5,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.contenedor-de-precio-tarjeta-label-uno{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,86,5,1);
+    padding: 0;
+}
+
+.contenedor-de-precio-tarjeta-label-uno .contenedor-de-precio-tarjeta-label-uno-p{
+
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke: 0.3px rgba(5,5,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(5,5,5,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+    padding-left: 5px;
+
+}
+
+.contenedor-de-precio-tarjeta-label-dos{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,86,5,1);
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#etiquetaSignoPesos{
+    
+    width: 40%;
+    height: 100%;
+    color: rgba(15,15,15,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: right;
+    line-height: 1;
+    padding-right: 2%;
+    margin: 0;
+}
+
+
+.label-precio-pizza{
+
+    width: 60%;
+    height: 100%;
+    color: rgba(15,15,15,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+
+}
+
+/*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/
+
+
+/*ESTILO FILA CANTIDAD*/ /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/ 
+.contenedor-de-cantidad-tarjeta{
+
+    width: 100%;
+    height: 33.33%;
+    background-color: rgba(255,255,255,0); 
+    border-bottom: 1px solid rgba(255,86,5,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.contenedor-de-cantidad-tarjeta-label{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    padding: 0;
+    border-right: 1px solid rgba(255,86,5,1);
+}
+
+.contenedor-de-cantidad-tarjeta-label .contenedor-de-cantidad-tarjeta-label-p{
+
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke: 0.3px rgba(5,5,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(5,5,5,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    line-height: 1;
+    padding-left: 5px;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-uno{
+
+    width: 16%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-uno .boton-disminuir{
+
+    width: 100%;   
+    height: 100%;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border: none;
+    border-radius: 0.5px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-disminuir span{
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    line-height: 1;     
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-dos{
+
+    width: 18%;
+    height: 100%;
+    background-color: rgba(255,255,255,1);
+    padding: 0;
+}
+
+.contenedor-de-cantidad-tarjeta-control-dos-p{
+
+    width: 100%; 
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-tres{
+
+    width: 16%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-tres .boton-aumentar{
+
+    width: 100%;  
+    height: 100%;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border: none;
+    border-radius: 0.5px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boton-aumentar span{
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    line-height: 1;     
+
+}
+
+
+/*ESTILO FILA CANTIDAD*/ /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/ 
+
+
+/*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/
+.contenedor-de-ordenar-tarjeta{
+
+    width: 100%;
+    height: 33.33%;
+    background-color: rgba(255,255,255,0); 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.contenedor-de-ordenar-tarjeta-label-uno{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.contenedor-de-ordenar-tarjeta-label-uno .boton-agregar-pizza{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border: none;
+    border-radius: 4px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+.boton-agregar-pizza span{
+
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 1px rgba(255,186,155,1),3px 3px 2px rgba(255,8,5,1);
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+}
+/*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/
+
+/*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/
+
+
+.column-paginador{
+
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.conte-nav-paginacion{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.unorderlist-paginacion{
+
+    margin-bottom: 0;
+    
+}
+
+.listitem-paginacion{
+
+    width: 2vw;
+    
+}
+
+.listitem-paginacion a{
+
+    line-height: 1; 
+    color: rgba(255,255,255,1); 
+    font-size: 16px; 
+    height: 30px; 
+    width: 2vw;
+    text-shadow: 1px 1px 1px rgba(255,186,155,1),3px 3px 2px rgba(255,8,5,1); 
+    background-color: rgba(195,165,110,1); 
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,0.5), inset -3px 0px 4px rgba(255,126,5,0.5); 
+    border: 0.3px solid rgba(255,86,5,1);    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.values-hidden{
+    
+ 
+  display: none;  
+    
+}
+
+/*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+    
+/*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/
+body{
+   
+   width: 100%;
+   height: 90%;
+   
+}
+
+
+/*ESTILOS PARA EL FONDO FIGURAS PIZZA*/
+.fondo-de-tarjetas-blanco{
+    
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background: rgba(255,126,5,1);
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+/*ESTILOS PARA EL FONDO FIGURAS PIZZA*/
+
+/*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ /*CONTENEDOR DE TARJETAS*/ 
+
+
+
+
+/*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/
+
+.columna-contenedor-de-titulo-tarjetas{
+
+    height: 15vh;
+    align-items: flex-end;
+    
+}
+
+.columna-contenedor-de-titulo-tarjetas h2{
+
+    font-size: 58px;
+    -webkit-text-stroke: 0.5px rgba(100,100,100,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(100,100,100,1);
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    text-align: center;
+    
+}
+
+
+/*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/ /*CONTENEDOR DE TITULO PIZZAS CLÁSICAS*/
+
+
+/*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ /*CONTENEDOR CUATRO CARDS*/ 
+
+
+.fila-contenedor-cards-cuatro-cards{
+
+    width: 100%;
+}
+
+.columna-contenedor-de-tarjetas{
+
+    height: 69vh;
+
+}
+
+.columna-nombre-de-cada-pizza{
+
+    height: 13%;
+
+}   
+
+.columna-nombre-de-cada-pizza h2{
+
+        font-size: 62px;
+    -webkit-text-stroke: 0.5px rgba(255,255,255,0.7); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.5px 2px rgba(255,255,255,0.7);
+   
+}
+
+.columna-descripcion-de-cada-pizza p{
+
+   font-size: 22px;
+
+}
+
+.contenedor-de-cada-tarjeta{
+
+    width: 96%;
+    height: 73%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.5),rgba(215,215,215,0.3));    
+    margin-bottom: 4%;
+}
+
+.sub-contenedor-de-cada-tarjeta{
+
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.contenedor-de-imagen-para-card{
+
+    width: 100%;
+    height: 70%;    
+    background-image: radial-gradient(circle at bottom, rgba(255,255,115,0.5)60%,rgba(255,56,5,0.7)90%);
+   
+}
+
+.contenedor-de-imagen-para-card img{
+
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+}
+
+.contenedor-de-opciones-tarjeta{
+
+   
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;       
+    background-image: radial-gradient(ellipse at top, rgba(255,255,115,1)0%,rgba(255,126,5,1)70%); 
+
+}
+
+/*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ 
+.contenedor-de-tamano-tarjeta {
+
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255,255,255,0); 
+    border-bottom: 1px solid rgba(255,86,5,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.contenedor-de-tamano-tarjeta-label-uno{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,86,5,1);
+    padding: 0;
+}
+
+
+.contenedor-de-tamano-tarjeta-label-uno .contenedor-de-tamano-tarjeta-label-uno-p{
+
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke: 0.3px rgba(5,5,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(5,5,5,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+    padding-left: 5px
+}
+
+.contenedor-de-tamano-tarjeta-label-dos{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.contenedor-de-tamano-tarjeta-label-dos form{
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 0;
+}
+
+#formTamanio{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.values-hidden{
+    
+  display: none;  
+    
+}
+
+.drop-down-list,
+.contenedor-de-tamano-tarjeta-label-dos-p{
+
+    font-size: 16px;
+
+}
+
+.contenedor-de-tamano-tarjeta-label-dos select{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,1);
+
+}
+/*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/ /*ESTILO FILA TAMAÑO*/
+
+
+/*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/
+
+.contenedor-de-precio-tarjeta{
+
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255,255,255,0); 
+    border-bottom: 1px solid rgba(255,86,5,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.contenedor-de-precio-tarjeta-label-uno{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,86,5,1);
+    padding: 0;
+}
+
+.contenedor-de-precio-tarjeta-label-uno .contenedor-de-precio-tarjeta-label-uno-p{
+
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke: 0.3px rgba(5,5,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(5,5,5,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+    padding-left: 5px;
+
+}
+
+.contenedor-de-precio-tarjeta-label-dos{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,86,5,1);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.label-precio-pizza{
+
+    color: rgba(15,15,15,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+
+}
+
+/*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/ /*ESTILO FILA PRECIO*/
+
+
+/*ESTILO FILA CANTIDAD*/ /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/ 
+.contenedor-de-cantidad-tarjeta{
+
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255,255,255,0); 
+    border-bottom: 1px solid rgba(255,86,5,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.contenedor-de-cantidad-tarjeta-label{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    padding: 0;
+    border-right: 1px solid rgba(255,86,5,1);
+}
+
+.contenedor-de-cantidad-tarjeta-label .contenedor-de-cantidad-tarjeta-label-p{
+
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke: 0.3px rgba(5,5,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(5,5,5,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    line-height: 1;
+    padding-left: 5px;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-uno{
+
+    width: 16%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-uno .boton-disminuir{
+
+    width: 100%;   
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border-top: 1px solid rgba(255,86,5,1);
+    border-bottom: 1px solid rgba(255,86,5,1);
+    border-left: 1px solid rgba(255,86,5,1);
+    border-right: 1px solid rgba(255,86,5,1);
+    border-radius: 0.5px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-disminuir span{
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    line-height: 1;     
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-dos{
+
+    width: 18%;
+    height: 100%;
+    background-color: rgba(255,255,255,1);
+    padding: 0;
+}
+
+.contenedor-de-cantidad-tarjeta-control-dos-p{
+
+    width: 100%; 
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-tres{
+
+    width: 16%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0;
+
+}
+
+.contenedor-de-cantidad-tarjeta-control-tres .boton-aumentar{
+
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border-top: 1px solid rgba(255,86,5,1);
+    border-bottom: 1px solid rgba(255,86,5,1);
+    border-left: 1px solid rgba(255,86,5,1);
+    border-right: 1px solid rgba(255,86,5,1);
+    border-radius: 0.5px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boton-aumentar span{
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    line-height: 1;     
+
+}
+
+
+/*ESTILO FILA CANTIDAD*/ /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/  /*ESTILO FILA CANTIDAD*/ 
+
+
+/*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/
+.contenedor-de-ordenar-tarjeta{
+
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255,255,255,0); 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.contenedor-de-ordenar-tarjeta-label-uno{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.contenedor-de-ordenar-tarjeta-label-uno .boton-agregar-pizza{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border-top: 1px solid rgba(255,86,5,1);
+    border-bottom: 1px solid rgba(255,86,5,1);
+    border-left: 1px solid rgba(255,86,5,1);
+    border-right: 1px solid rgba(255,86,5,1);
+    border-radius: 4px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+.boton-agregar-pizza span{
+
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 1px rgba(255,186,155,1),3px 3px 2px rgba(255,8,5,1);
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+}
+/*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/ /*ESTILO FILA ORDENAR*/
+
+/*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/
+
+
+.column-paginador{
+
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.conte-nav-paginacion{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.unorderlist-paginacion{
+
+    margin-bottom: 0;
+    
+}
+
+.listitem-paginacion{
+
+    width: 5vw;
+    
+}
+
+.listitem-paginacion a{
+
+    line-height: 1; 
+    color: rgba(255,255,255,1); 
+    font-size: 16px; 
+    height: 30px; 
+    width: 2vw;
+    text-shadow: 1px 1px 1px rgba(255,186,155,1),3px 3px 2px rgba(255,8,5,1); 
+    background-color: rgba(195,165,110,1); 
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,0.5), inset -3px 0px 4px rgba(255,126,5,0.5); 
+    border: 0.3px solid rgba(255,86,5,1);    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/ /*ESTILOS PAGINADOR*/
+
+
+}
+
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+
+
+

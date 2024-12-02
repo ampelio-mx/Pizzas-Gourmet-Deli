@@ -1,0 +1,266 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'MiFuenteCreativo'; /* Nombre que le das a la fuente */
+    src: url('../estilos_paginas_comunes/fuentes_paginas_comunes/Creativo Italic.otf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+
+.columna-formulario-cliente-login{
+
+
+    height: 90vh;
+
+}
+
+.formulario-inicio-cliente{
+
+    height: 100%;   
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+
+}
+
+.contenedordiv-elementos-formulario{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19,19,19,0.1);
+    background-image: linear-gradient(135deg,rgba(255,255,255,0.2)3%,rgba(255,255,255,0.09)17%,rgba(0,0,0,0.09)33%, rgba(255,255,255,0.3)54.9%, rgba(255,255,255,0.3)55.1%, rgba(15,15,15,0.05)76%,rgba(150,150,150,0.05)88%,rgba(255,255,255,0.1)96%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+.contenedordiv-elementos-formulario-dos{
+       
+    height: 80vh;       
+    background-color:rgba(0,0,0,0);
+    color:rgba(0,255,12,1);    
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.formulario-registro{
+
+    width: 40%; 
+    height: 80vh; 
+    
+}
+
+.tittle-formulario{
+    
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.tittle-formulario h1{
+
+    font-family: MiFuenteCreativo;
+    color:rgba(255,126,5,1);
+    font-size: 52px; 
+    text-align: center;        
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.6px rgba(255,255,255,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.6px 2px rgba(255,255,255,1);
+}
+
+.rotulo-entrega{
+    
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rotulo-entrega h3{
+    
+    font-family: MiFuenteCreativo;
+    color:rgba(255,255,5,1);
+    font-size: 16px; 
+    text-align: justify;        
+    font-weight: normal;
+}
+
+.elementos-formulario{
+    
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 3vh;
+       
+    
+}
+.clase-etiquetas-form{
+
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.clase-etiquetas-form-boton{
+
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.etiqueta-formulario-cliente{
+    
+    width: 40%;
+    height: 5.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.etiqueta-formulario-cliente p{
+
+    font-family: MiFuenteCreativo;
+    color:rgba(255,255,255,1);
+    font-size: 22px; 
+    text-align: center;        
+    font-weight: lighter;
+    -webkit-text-stroke: 0.4px rgba(255,126,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.4px 2px rgba(255,126,5,1);
+    padding-left: 1vw;
+}
+
+.cajas-form{
+    
+    width: 60%;
+    height: 4vh;    
+    border-radius: 7px;   
+    font-size: 14px;
+    box-shadow: inset 0px -1px 1px rgba(15,15,15,0.2);
+
+
+}
+
+.clase-cajas-form-text{
+
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.boton-administrador-login{
+
+    width: 15vw;
+    height: 5vh;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border-top: 1px solid rgba(255,255,255,1);
+    border-bottom: 2px solid rgba(255,86,5,1);
+    border-left: 1px solid rgba(255,86,5,1);
+    border-right: 1px solid rgba(255,86,5,1);
+    border-radius: 4px;
+    margin: 0;
+
+}
+
+.boton-administrador-login p{
+    
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 1px rgba(255,186,155,1),3px 3px 2px rgba(255,8,5,1);
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+    
+    
+.contenedordiv-elementos-formulario-dos{
+       
+    height: 90vh;
+}
+
+
+.formulario-registro{
+
+    width: 100%; 
+    height: 90vh; 
+}
+
+
+.rotulo-entrega{
+
+    height: 10vh;
+    
+}
+
+.rotulo-entrega h3{
+    
+    font-size: 16px; 
+}
+
+.elementos-formulario{
+    
+    height: 60vh;
+    justify-content: flex-start;
+    
+}
+
+.etiqueta-formulario-cliente p{
+
+    font-size: 18px;
+    -webkit-text-stroke: 0px rgba(255,126,5,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0px 2px rgba(255,126,5,1);
+}
+
+.boton-administrador-login{
+
+    width: 60vw;
+
+}
+  
+}

@@ -1,0 +1,32 @@
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+}
+
+.controles-principales{
+    
+
+}
+
+.controles-secundarios-pizzas{
+    
+    background-color: black;
+    text-align: center;
+
+}
+
+
+.acordeon-principal{
+    
+    margin-top: 10vh;
+    
+}

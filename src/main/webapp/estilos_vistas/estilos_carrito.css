@@ -1,0 +1,175 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'MiFuenteCreativo'; /* Nombre que le das a la fuente */
+    src: url('../estilos_paginas_comunes/fuentes_paginas_comunes/Creativo Italic.otf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+.contenedor-tabla-pedido{
+
+    margin-top: 10vh;
+
+}
+.fila-tabla-pedido{
+
+
+    height: 90vh;
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.columna-tabla-pedido{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19,19,19,0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+.tabla-carrito{
+
+    width: 70%; 
+
+}
+
+.tabla-pedido{
+
+    width: 100%;
+
+}
+
+#id-titulo-menu{
+
+    border-bottom: 0.5px solid rgba(255,255,255,1);
+}
+
+.titulo-menu{
+
+
+}
+
+.tabla-pedido tr td{
+
+    border-bottom: 0.5px solid rgba(255,255,255,1);
+
+}
+
+.titulo-menu {
+
+
+    color: rgba(255,85,6,1); 
+    font-size: 38px; 
+    text-align: center;        
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+.menu-medidas, .precio-producto-menu{
+
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+    color: rgba(255,255,255,1); 
+    padding-left: 10px;
+    padding-right:  10px;
+
+}
+
+#id-producto-menu{
+    
+    display: none;
+}
+
+.tabla-pedido .precio-producto-menu{
+
+    color: rgba(255,255,255,1);
+}
+
+.contenedor-botones{
+
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+/*/////////////////////////////////////////////////////////*/
+
+.conte-boton-carrito button{
+
+    width: 10vw;
+    height: 5vh;
+    background-color: rgba(255,255,255,1);
+    box-shadow: inset 0px 2px 4px 0px rgba(255,145,26,1),inset 0px 5px 6px 0px rgba(255,205,86,1), inset 0px 8px 9px 0px rgba(255,245,136,1),
+        inset 0px -2px 4px 0px rgba(255,145,26,1),inset 0px -5px 6px 0px rgba(255,205,86,1), inset 0px -8px 9px 0px rgba(255,245,136,1),
+        inset 2px 0px 3px 0px rgba(255,145,26,1), inset 8px 0px 9px 0px rgba(255,245,136,1),                    
+        inset -2px 0px 3px 0px rgba(255,145,26,1), inset -8px 0px 9px 0px rgba(255,245,136,1);
+    border: 2px solid rgba(255,145,26,1); 
+    border-radius: 25px;
+    
+}
+
+.boton-carrito{
+
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 1px rgba(255,186,155,1),1px 3px 1px rgba(255,8,5,1);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: 0.3px rgba(255,8,5,0.3); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.3px 2px rgba(255,8,5,0.3); 
+    line-height: 1;
+    margin-right: 1vw;
+}
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+    .tabla-carrito{
+
+        width: 90%; 
+
+    }
+
+    .conte-boton-carrito button{
+
+        width: 30vw;
+        height: 4vh;
+    }
+
+    .contenedor-botones{
+
+    width: 100%;
+        
+}
+}
+
+
+
+

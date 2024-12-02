@@ -1,0 +1,162 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor-create-user{
+    
+    margin-top: 10vh;     
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+    
+}
+
+.columna-create-user{
+      
+    height: 90vh;
+    position: relative;
+    
+}
+
+
+#formulario-transparencia{
+
+    width: 20%;
+    height: 50%;    
+    background-color: rgba(255,255,255,0);
+    background-image: linear-gradient(135deg,rgba(255,255,255,0.5)3%,rgba(255,255,255,0.3)17%,rgba(135,135,135,0.1)33%, rgba(255,255,255,0.5)54.9%,rgba(255,255,255,0.6)55%, rgba(255,255,255,0.5)55.1%,rgba(15,15,15,0.1)80%,rgba(190,190,190,0.2)90%,rgba(255,255,255,0.3)96%);   
+    border-radius: 8%;
+    border: 0.3px solid rgba(255,255,255,1);
+    box-shadow: inset -2px -2px 7px 0 rgba(255,255,255,0.3), inset 2px 0px 7px 0 rgba(255,255,255,0.3);
+    filter: blur(1px);
+    -webkit-filter: blur(0.9px); 
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    
+}
+
+#contenedor-formulario-user-login{
+
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    
+}
+
+
+.formulario-inicio-administrador{
+
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldsetclase-uno{
+    
+    width: 100%;
+    height: 80%;
+    
+}
+
+#titulo-registro{
+   
+     width: 100%;
+    height: 20%;
+    margin-bottom: 0;
+    color: rgba(255,255,255,1);
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.tabla-primera-cajas-formulario{
+    
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    color: rgba(255,255,255,1);
+    text-align: left;
+    
+}
+
+.cajasform{
+    
+    border-radius: 7px;
+    width: 100%;
+    height:3vh;
+    font-size: 12px;
+    
+}
+
+
+.fieldsetclase-dos{
+    
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+#tabla-segunda-boton-formulario, #tabla-segunda-boton-formulario td{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+#boton{
+    
+    width: 80%;
+    height: 5vh;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border-top: 1px solid rgba(255,255,255,1);
+    border-bottom: 2px solid rgba(255,86,5,1);
+    border-left: 1px solid rgba(255,86,5,1);
+    border-right: 1px solid rgba(255,86,5,1);
+    border-radius: 4px;
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 2px rgba(255,186,155,1),2px 2px 2px rgba(255,8,5,1);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10%;
+    
+}
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+    #formulario-transparencia{
+
+    width: 80%;
+    left: 10%;
+    
+}
+
+#contenedor-formulario-user-login{
+
+    width: 80%;
+    left: 10%;
+    
+}
+    
+}

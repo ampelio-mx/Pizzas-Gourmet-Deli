@@ -1,0 +1,316 @@
+
+/*ESTILOS GENÉRICOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor-ubicaciones-tittle{
+
+    margin-top: 10vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1); 
+}
+
+
+
+.fila-ubicaciones-tittle{
+
+    width: 100%;
+    height: 100%; 
+
+
+}
+.columna-contenedor-sucursales-title{
+
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sucursales-title{
+
+    font-family: MiFuenteCreativo;
+    font-size: 46px;
+    color: rgba(255,126,5,1);
+    text-align: center;
+    line-height: 2;
+    text-shadow: 2px 2px 4px rgba(245,245,245,0.7);
+    -webkit-text-stroke: 0.9px rgba(255,255,255,1); /* Ancho y color del contorno (para navegadores WebKit como Chrome y Safari) */
+    text-stroke: 0.9px 2px rgba(255,255,255,1);
+    margin-bottom: 0;
+
+}
+
+
+.contenedor-ubicaciones{
+
+    width: 100%;
+    height: 100%;    
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+    
+}
+
+.fila-ubicaciones{
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.columna-contenedor-sucursales{
+
+    height: 80vh;
+
+}
+
+.div-contenedor-sucursales{
+
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+
+}
+/*COLUMNA NOMBRE SUCURSAL*/
+.columna-nombre-sucursal{
+
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.columna-nombre-sucursal h2{
+
+    color: rgba(255,255,255,1); 
+    font-size: 34px; 
+    text-align: center;        
+    font-weight: normal;
+    margin-bottom: 0;
+
+}
+/*COLUMNA NOMBRE SUCURSAL*/
+
+/*COLUMNA FOTOS SUCURSAL*/
+.columna-imagenes-sucursal{
+
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.col-imagen-left-left{
+
+    width: 37.5%;
+    height: 30vh;
+    background-image: url("../imagenes_vistas/viaducto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid rgba(255,255,255,1);
+}
+
+.col-imagen-left-right{
+
+    width: 37.5%;
+    height: 30vh;
+    background-image: url("../imagenes_vistas/viaducto_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid rgba(255,255,255,1);
+
+}
+
+.columna-mapa-sucursal-addres-iztacalco, .columna-mapa-sucursal-addres-viaducto{
+
+    width: 25%;
+    height: 30vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(255,255,255,1);
+    background-color: rgba(1,1,1,0.3);
+}
+
+.columna-mapa-sucursal-addres-iztacalco p, .columna-mapa-sucursal-addres-viaducto p{
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+    color: rgba(255,255,255,1);
+
+}
+
+.col-imagen-right-left{
+
+    width: 37.5%;
+    height: 30vh;
+    background-image: url("../imagenes_vistas/viaducto_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid rgba(255,255,255,1);
+}
+
+.col-imagen-right-right{
+
+    width: 37.5%;
+    height: 30vh;
+    background-image: url("../imagenes_vistas/viaducto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid rgba(255,255,255,1);
+
+}
+
+/*COLUMNA FOTOS SUCURSAL*/
+
+/*COLUMNA MAPA SUCURSAL*/
+.columna-mapa-sucursal{
+
+    width: 100%;
+    height: 39vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapa {
+    width: 100%;
+    height: 32vh;
+}
+
+#mapados {
+    width: 100%;
+    height: 32vh;
+}
+
+
+
+
+/*COLUMNA MAPA SUCURSAL*/
+
+/*COLUMNA DIRECCIÓN SUCURSAL*/
+.columna-direccion-sucursal{
+
+    width: 100%;
+    height: 1vh;
+
+}
+/*COLUMNA DIRECCIÓN SUCURSAL*/
+
+
+@media (max-width:768px){
+    
+
+
+
+/*COLUMNA NOMBRE SUCURSAL*/
+
+
+.columna-nombre-sucursal h2{
+
+    font-size: 44px; 
+
+}
+/*COLUMNA NOMBRE SUCURSAL*/
+
+/*COLUMNA FOTOS SUCURSAL*/
+.columna-imagenes-sucursal{
+
+    height: 20vh;
+
+}
+
+.col-imagen-left-left{
+
+    height: 20vh;
+    border: 3px solid rgba(255,255,255,1);
+}
+
+.col-imagen-left-right{
+
+    height: 20vh;
+    border: 3px solid rgba(255,255,255,1);
+
+}
+
+.columna-mapa-sucursal-addres-iztacalco, .columna-mapa-sucursal-addres-viaducto{
+
+    height: 20vh;        
+    border: 3px solid rgba(255,255,255,1);
+    
+}
+
+.columna-mapa-sucursal-addres-iztacalco p, .columna-mapa-sucursal-addres-viaducto p{
+
+    font-size: 12px;
+
+}
+
+.col-imagen-right-left{
+
+    height: 20vh;
+    border: 3px solid rgba(255,255,255,1);
+}
+
+.col-imagen-right-right{
+
+    height: 20vh;
+    border: 3px solid rgba(255,255,255,1);
+
+}
+
+/*COLUMNA FOTOS SUCURSAL*/
+
+/*COLUMNA MAPA SUCURSAL*/
+.columna-mapa-sucursal{
+
+    height: 49vh;
+    justify-content: flex-end;
+}
+
+#mapa {
+    width: 100%;
+    height: 46vh;
+}
+
+#mapados {
+    width: 100%;
+    height: 46vh;
+}
+
+
+
+
+/*COLUMNA MAPA SUCURSAL*/
+
+/*COLUMNA DIRECCIÓN SUCURSAL*/
+.columna-direccion-sucursal{
+
+    width: 100%;
+    height: 1vh;
+
+}
+/*COLUMNA DIRECCIÓN SUCURSAL*/
+
+    
+    
+
+
+}

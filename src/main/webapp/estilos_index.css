@@ -1,0 +1,612 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor-inicio-delivery{
+
+    margin-top: 10vh;
+
+}
+
+/*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/ 
+.columna-inicio-delivery-left{
+
+    height: 90vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+  
+}
+#conte-forma-envio{
+
+    width: 80%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#datos-envio-tittle{
+
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,1);
+    border: 0.5px solid rgba(255,85,6,0.5); 
+}
+
+#datos-envio-tittle h2{
+
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgba(255,85,6,1); 
+}
+
+#datos-envio-icons{
+
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.iconos-pickup-delivery-left, .iconos-pickup-delivery-right{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,126,5,1);
+
+}
+
+
+.iconos-pickup-delivery-tienda{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255,126,5,1);
+   
+}
+
+.conte-formulario-inicio-codigo{
+
+    width: 50%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+
+
+}
+.formulario-inicio-codigo{
+
+    width: 100%;
+    height: 85%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.cristal-tienda{
+
+    position: absolute;
+    width: 16vh;
+    height: 16vh;   
+    border-radius: 50%;   
+    background-color: rgba(255,255,255,1);
+    filter: blur(1px);
+    -webkit-filter: blur(0.5px); 
+    z-index: 9;
+
+}
+
+.cristal-tienda:hover{
+
+    width: 19vh;
+    height: 19vh;
+}
+
+.iconos-circle-store-boton{
+
+    width: 16vh;
+    height: 16vh;
+    border: 5px solid rgba(0,0,0,1); 
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("imagenes_vistas/pizza_ico.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: 10;
+
+
+}
+
+.iconos-circle-store-boton:hover{
+
+    width: 17vh;
+    height: 17vh;
+    box-shadow: 1px 1px 5px 2px rgba(195,76,5,0.7), -1px -1px 5px 2px rgba(195,76,5,0.7);
+
+} 
+
+.nombre-sucursal{
+
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nombre-sucursal p{
+
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+    margin-bottom: 0;
+}
+.conte-iconos-circle-moto{
+
+    width: 100%;
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.conte-parrafo-envio{
+
+    width: 100%;
+    height: 20%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conte-parrafo-envio p{
+
+    font-size: 22px;
+
+    color: rgba(255,255,255,1);
+    margin-bottom: 0;
+
+}
+
+
+.iconos-circle-moto{
+
+    width: 18vh;
+    height: 18vh;
+    border: 5px solid rgba(0,0,0,1); 
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("imagenes_vistas/scooter_ico.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+
+
+.iconos-circle-moto:hover{
+
+    width: 19vh;
+    height: 19vh;
+    box-shadow: 1px 1px 5px 2px rgba(195,76,5,0.7), -1px -1px 5px 2px rgba(195,76,5,0.7);
+
+} 
+
+
+.cristal{
+
+    position: absolute;
+    width: 18vh;
+    height: 18vh;   
+    border-radius: 50%;   
+    background-color: rgba(255,255,255,1);
+    filter: blur(1px);
+    -webkit-filter: blur(0.5px); 
+    z-index: 9;
+
+}
+
+.cristal:hover{
+
+    width: 21vh;
+    height: 21vh;
+}
+
+.iconos-pickup-delivery p{
+
+
+
+}
+
+
+/*3er DIV CAMPO MAPA*/
+#datos-envio-mapa{
+
+    display: none;
+    width: 100%;
+    height: 48vh;
+    position: relative;
+}
+
+#conte-instrucciones-domicilio{
+
+    width: 100%;
+    height: 4vh;    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgba(35,35,35,0.1);
+}
+
+#conte-instrucciones-domicilio p{
+
+    font-size: 12px;
+    color: rgba(255,255,255,1);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+
+#campo-texto-mapa{
+
+    width: 100%;
+    height: 4vh;  
+
+}
+#map-loading-indicator-hide{
+
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    display: none;  
+}
+
+#map-loading-indicator {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1); /* Fondo semitransparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map-loading-indicator p{
+
+    font-size: 14px;
+    color: orange;
+    z-index: 1;
+
+}
+
+.spinner {
+    border: 4px solid rgba(255,85,6,0.2);
+    border-top: 4px solid rgba(255,85,6,1); /* Color del spinner */
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    animation: spin 2s linear infinite;
+    z-index: 1;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#map {
+    width: 100%;
+    height: 30vh;
+}
+
+
+#datos-envio-botones{
+
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#conte-boton-ubicacion, #conte-boton-enviar-ubicacion{
+
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#conte-boton-ubicacion button, #conte-boton-enviar-ubicacion button{
+
+    width: 90%;
+    height: 50%;
+    background-color: rgba(255,255,255,1);
+    box-shadow: inset 0px 2px 4px 0px rgba(255,145,26,1),inset 0px 5px 6px 0px rgba(255,205,86,1), inset 0px 8px 9px 0px rgba(255,245,136,1),
+        inset 0px -2px 4px 0px rgba(255,145,26,1),inset 0px -5px 6px 0px rgba(255,205,86,1), inset 0px -8px 9px 0px rgba(255,245,136,1),
+        inset 2px 0px 3px 0px rgba(255,145,26,1), inset 8px 0px 9px 0px rgba(255,245,136,1),                    
+        inset -2px 0px 3px 0px rgba(255,145,26,1), inset -8px 0px 9px 0px rgba(255,245,136,1);
+    border: 2px solid rgba(255,145,26,1);    
+    border-radius: 25px;
+
+}
+
+
+/*3er DIV CAMPO MAPA*/
+/*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/ 
+
+/*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/
+.columna-inicio-delivery-right{
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1)); 
+}
+
+#conte-logo-empresa{
+
+    width: 80%;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+}
+/*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/ /*COLUMNA RIGHT*/
+
+
+
+
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+
+    /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/ 
+    .columna-inicio-delivery-left{
+
+        align-items: center;
+
+    }
+    #conte-forma-envio{
+
+        width: 98%;
+    }
+
+    #datos-envio-tittle h2{
+
+        font-size: 24px;
+    }
+
+    .iconos-pickup-delivery-left{
+
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255,126,5,1);
+
+    }
+
+    .iconos-pickup-delivery-right{
+
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255,126,5,1);
+
+    }
+
+    .cristal-tienda{
+
+        width: 11vh;
+        height: 11vh;   
+    }
+
+    .cristal-tienda:hover{
+
+        width: 11vh;
+        height: 11vh;
+
+    }
+    .iconos-circle-store-boton{
+
+        width: 11vh;
+        height: 11vh;
+        border: 2px solid rgba(0,0,0,1); 
+        box-shadow: 1px 1px 5px 2px rgba(195,76,5,0.7), -1px -1px 5px 2px rgba(195,76,5,0.7);
+    }
+
+    .iconos-circle-store-boton:hover{
+
+        width: 11vh;
+        height: 11vh;    
+
+    } 
+
+    .nombre-sucursal p{
+
+        font-size: 18px;  
+        color: rgba(255,255,255,1);
+        margin-bottom: 0;
+
+    }
+
+    .conte-parrafo-envio{
+
+        width: 100%;
+        height: 20%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .conte-parrafo-envio p{
+
+        font-size: 20px;  
+        color: rgba(255,255,255,1);
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .iconos-circle-moto{
+
+        width: 16vh;
+        height: 16vh;
+        border: 4px solid rgba(0,0,0,1); 
+        box-shadow: 1px 1px 5px 2px rgba(195,76,5,0.7), -1px -1px 5px 2px rgba(195,76,5,0.7);
+    }
+
+
+    .iconos-circle-moto:hover{
+
+        width: 16vh;
+        height: 16vh;
+
+    } 
+
+
+    .cristal{
+
+        width: 16vh;
+        height: 16vh;   
+
+    }
+
+    .cristal:hover{
+
+        width: 16vh;
+        height: 16vh;
+    }
+
+    .iconos-pickup-delivery p{
+
+
+
+    }
+
+
+    /*3er DIV CAMPO MAPA*/
+ 
+    #map-loading-indicator-hide{
+
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        display: none;  
+    }
+
+    #map-loading-indicator {
+
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #map-loading-indicator p{
+
+        font-size: 14px;
+        color: orange;
+        z-index: 1;
+
+    }
+
+    .spinner {
+        border: 4px solid rgba(255,85,6,0.2);
+        border-top: 4px solid rgba(255,85,6,1); /* Color del spinner */
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        animation: spin 2s linear infinite;
+        z-index: 1;
+
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    #map {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #conte-boton-ubicacion, #conte-boton-enviar-ubicacion{
+
+        width: 45%;
+      
+        
+    }
+
+    .columna-inicio-delivery-right{
+        
+        display: none;
+    }
+
+    /*3er DIV CAMPO MAPA*/
+    /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/  /*COLUMNA LEFT*/ 
+
+
+
+
+} 
+
+

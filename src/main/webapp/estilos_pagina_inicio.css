@@ -1,0 +1,1043 @@
+
+/*ESTILOS GENÉRICOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'MiFuenteBillabong'; /* Nombre que le das a la fuente */
+    src: url('estilos_paginas_comunes/fuentes_paginas_comunes/Billabong.otf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+@font-face {
+    font-family: 'MiFuenteKlavika'; /* Nombre que le das a la fuente */
+    src: url('estilos_paginas_comunes/fuentes_paginas_comunes/klavika-medium.otf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+@font-face {
+    font-family: 'MiFuentePico'; /* Nombre que le das a la fuente */
+    src: url('estilos_paginas_comunes/fuentes_paginas_comunes/PICOBL__.TTF') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+@font-face {
+    font-family: 'MiFuenteFashionismLight'; /* Nombre que le das a la fuente */
+    src: url('estilos_paginas_comunes/fuentes_paginas_comunes/ESNRAZ-FashionismLight.ttf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+@font-face {
+    font-family: 'MiFuenteJamesStroker'; /* Nombre que le das a la fuente */
+    src: url('estilos_paginas_comunes/fuentes_paginas_comunes/ESNRAZ-JamesStroker.ttf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+/*ESTILOS GENÉRICOS FIN*/
+
+
+/*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/
+/*ESTILOS CONTENEDOR SUPERIOR PÁGINA DE INICIO*/
+.contenedor-pagina-inicio-nombre-empresa{
+
+    margin-top: 10vh;
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1)); 
+}
+/*ESTILOS CONTENEDOR SUPERIOR PÁGINA DE INICIO*/
+
+/*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/ /*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/
+/*COLUMNA IZQUIERDA*/
+.columna-pagina-inicio-nombre-empresa{
+
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*COLUMNA IZQUIERDA*/
+
+/*ESTILOS COLUMNA IZQUIERDA NOMBRE EMPRESA E IMAGEN PIZZA*/
+.pagina-inicio-nombre-empresa-imagen{
+
+    width: 80%;
+    height: 80%;
+}
+
+.pagina-inicio-nombre-empresa-imagen img{
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+}
+
+.pagina-inicio-nombre-empresa-imagen-pizza{
+
+    width: 40%;
+    height: 35%;    
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(45,155,45,0.2),rgba(45,155,45,0.1)10%), url("imagenes_vistas/brazas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;   
+    border: 2px solid rgba(139,69,19,0.6);
+    margin-bottom: 5%;
+}
+
+.pagina-inicio-nombre-empresa-imagen-pizza img{
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+/*ESTILOS COLUMNA IZQUIERDA NOMBRE EMPRESA E IMAGEN PIZZA*/
+/*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/ /*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/
+
+
+/*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ /*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ 
+.columna-pagina-inicio-redes-sociales{
+
+    height: 85vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conte-redes-sociales-transparencia{
+
+    width: 80%;
+    height: 80%;
+    background-color: rgba(151,98,280,0.1);
+    background-image: linear-gradient(0deg,rgba(235,235,235,0.1),rgba(235,235,235,0.1));
+    border: 0.5px solid white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+
+}
+
+.conte-cada-red-social{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row; 
+}
+
+/*ESTILO GENERAL CONTENEDOR PÁRRAFO REDES SOCIALES*/
+.conte-cada-red-social-parraf{
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+/*ESTILO GENERAL CONTENEDOR PÁRRAFO REDES SOCIALES*/
+
+/*ESTILO GENERAL CONTENEDOR ÍCONOS REDES SOCIALES*/
+.conte-cada-red-social-icon{
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+
+
+.contenedor-icono-redes-gradient{
+
+    width: 40%;
+    height: 55%;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.4)40%, rgba(255,255,255,0.1)50%);
+    border: 1px solid rgba(255,255,255,1);
+    box-shadow: 1px 2px 1px rgba(255,255,255,0.7), -1px 0px 1px rgba(255,255,255,0.7), inset 0px 5px 2px rgba(255,255,255,0.4);
+    border-radius: 12%; 
+    position: absolute;
+    top: 22.5%;
+    left: 30% 
+
+}
+
+.fa-users{
+
+    font-size: 44px;     
+    text-align: center;    
+    color: rgba(255,255,255,1); 
+
+}
+
+.tiktok-icon-tresd{
+
+    font-size: 42px;     
+    text-align: center;    
+    color: rgba(255,255,255,1); 
+    text-shadow: -2px -2px 2px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 2px 2px 2px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+
+}
+/*ESTILO GENERAL CONTENEDOR ÍCONOS REDES SOCIALES*/
+
+
+/*ESTILOS TEXTO REDES SOCIALES FACEBOOK*/
+#conte-redes-sociales-facebook-text{
+
+    animation: aparecerfacebook 3s 0s forwards;
+
+}
+
+
+@keyframes aparecerfacebook {
+    0% {
+
+        width: 0;
+        height: 0;
+
+    }
+
+    100% {
+        width: 85%;
+        height: 55%;
+        background-color: rgba(66,103,178,1);    
+        border: 1px solid rgba(255,255,255,1);
+        box-shadow: 2px 1px 1px rgba(255,255,255,1), inset 2px 1px 1px rgba(255,255,255,1);
+        border-radius: 20px;
+        opacity: 1;
+
+    }
+}
+
+#facebook-parrafo{
+
+    font-family: MiFuenteKlavika;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    font-size: 0px;
+    animation: ajustartextofacebook 3s 0s forwards;
+    line-height: 2.6;
+
+}
+
+#facebook-parrafo span{
+
+    font-family: MiFuentePizza;
+    font-size: 22px;
+}
+
+@keyframes ajustartextofacebook{
+
+    0%{
+        font-size: 12px;
+        opacity:0.3;
+    }
+    50%{
+        font-size: 14px;
+        opacity:0.5;
+    }
+    100%{
+        font-size: 16px;
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES FACEBOOK*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES FACEBOOK*/
+#conte-redes-sociales-facebook-icon{
+
+    width: 40%;
+    height: 55%;
+    background-color: rgba(66,103,178,1);    
+
+
+    border-radius: 12%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1px;
+}
+
+/*ESTILOS ÍCONOS REDES SOCIALES FACEBOOK*/
+
+
+/*ESTILOS TEXTO REDES SOCIALES INSTAGRAM*/
+
+#conte-redes-sociales-instagram-text{
+
+    animation: aparecerinstagram 3s 3s forwards;
+}
+
+
+@keyframes aparecerinstagram {
+    0% {
+
+        width: 0;
+        height: 0;
+
+    }
+
+    100% {
+        width: 85%;
+        height: 55%;
+        background-image: linear-gradient(145deg, rgba(131, 58, 180,1), rgba(253, 29, 29,1), rgba(252, 176, 69,1));
+        border: 1px solid rgba(255,255,255,1);
+        box-shadow: 2px 1px 1px rgba(255,255,255,1), inset 2px 1px 1px rgba(255,255,255,1);
+        border-radius: 20px;
+        opacity: 1;
+
+    }
+}
+
+#instagram-parrafo{
+
+    font-family: MiFuenteBillabong, sans-serif;
+    text-align: center;
+    color: rgba(255,255,255,0);
+    font-size: 0;
+    animation: ajustartextoinstagram 3s 3s forwards;
+    line-height: 2.6;
+}
+
+#instagram-parrafo span{
+
+    font-family: MiFuentePizza;
+    font-size: 22px;
+
+}
+
+
+@keyframes ajustartextoinstagram{
+
+    0%{
+        font-size: 12px;
+        color: rgba(255,255,255,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 18px;
+        color: rgba(255,255,255,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        opacity:1;
+    }
+}
+
+/*ESTILOS TEXTO REDES SOCIALES INSTAGRAM*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES INSTAGRAM*/
+#conte-redes-sociales-instagram-icon{
+
+    width: 40%;
+    height: 55%;   
+    background-image: linear-gradient(145deg, rgba(131, 58, 180,1), rgba(253, 29, 29,1), rgba(252, 176, 69,1));
+    border-radius: 12%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1px;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES INSTAGRAM*/
+
+/*ESTILOS TEXTO REDES SOCIALES WHATSAPP*/
+#conte-redes-sociales-whatsapp-text{
+
+    animation: aparecerwhatsapp 3s 6s forwards;
+
+}
+
+@keyframes aparecerwhatsapp {
+    0% {
+
+        width: 0;
+        height: 0;
+
+    }
+
+    100% {
+        width: 85%;
+        height: 55%;
+        background-image: linear-gradient(145deg, rgba(18,140,126,1), rgba(37, 211, 102,1));
+        border: 1px solid rgba(255,255,255,1);
+        box-shadow: 2px 1px 1px rgba(255,255,255,1), inset 2px 1px 1px rgba(255,255,255,1);
+        border-radius: 20px;
+        opacity: 1;
+
+    }
+}
+
+#whatsapp-parrafo{
+
+    font-family: sans-serif;
+    text-align: center;
+    color: rgba(255,255,255,0);
+    font-size: 0;
+    animation: ajustartextowhatsapp 3s 6s forwards;
+    line-height: 2.6;
+
+}
+
+@keyframes ajustartextowhatsapp{
+
+    0%{
+        font-size: 12px;
+        color: rgba(255,255,255,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 16px;
+        color: rgba(255,255,255,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 18px;
+        color: rgba(255,255,255,1);
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES WHATSAPP*/
+
+
+/*ESTILOS ÍCONOS REDES SOCIALES WHATSAPP*/
+#conte-redes-sociales-whatsapp-icon{
+
+    width: 40%;
+    height: 55%;   
+    background-color: rgba(18,140,126,1);
+    border-radius: 12%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1px;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES WHATSAPP*/
+
+/*ESTILOS TEXTO REDES SOCIALES TELEGRAM*/
+#conte-redes-sociales-telegram-text{
+
+    animation: aparecertelegram 3s 9s forwards;
+
+}
+
+@keyframes aparecertelegram {
+    0% {
+
+        width: 0;
+        height: 0;
+
+    }
+
+    100% {
+        width: 85%;
+        height: 55%;
+        background-color: rgba(29, 161, 242,1);
+        border: 1px solid rgba(255,255,255,1);
+        box-shadow: 2px 1px 1px rgba(255,255,255,1), inset 2px 1px 1px rgba(255,255,255,1);
+        border-radius: 20px;
+        opacity: 1;
+
+    }
+}
+
+#telegram-parrafo{
+
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    color: rgba(255,255,255,0);
+    font-size: 0px;
+    animation: ajustartextotelegram 3s 9s forwards;
+    line-height: 2.6;
+    
+}
+
+@keyframes ajustartextotelegram{
+
+    0%{
+        font-size: 12px;
+        color: rgba(255,255,255,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 16px;
+        color: rgba(255,255,255,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 18px;
+        color: rgba(255,255,255,1);
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES TELEGRAM*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES TELEGRAM*/
+#conte-redes-sociales-telegram-icon{
+
+    width: 40%;
+    height: 55%;   
+    background-color: rgba(29, 161, 242,1);
+    border-radius: 12%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1px;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES TELEGRAM*/
+
+/*ESTILOS TEXTO REDES SOCIALES TIKTOK*/
+#conte-redes-sociales-tiktok-text{
+
+    animation: aparecertiktok 3s 12s forwards;
+
+}
+
+@keyframes aparecertiktok {
+    0% {
+
+        width: 0;
+        height: 0;
+
+    }
+
+    100% {
+        width: 85%;
+        height: 55%;
+        background-color: rgba(255,255,255,1);
+        border: 1px solid rgba(0,0,0,1);
+        box-shadow: 2px 1px 1px rgba(5,5,5,1), inset 2px 1px 1px rgba(5,5,5,1);
+        border-radius: 20px;
+        opacity: 1;
+
+    }
+}
+
+#tiktok-parrafo{
+
+    font-family: MiFuentePico;
+    text-align: center;
+    color: rgba(1,1,1,0);
+    font-size: 0px;
+    animation: ajustartextotiktok 3s 12s forwards;
+    line-height: 2.6;
+
+}
+
+@keyframes ajustartextotiktok{
+
+    0%{
+        font-size: 12px;
+        color: rgba(1,1,1,1);
+        text-shadow: -2px -2px 2px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 2px 2px 2px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 16px;
+        color: rgba(1,1,1,1);
+        text-shadow: -2px -2px 2px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 2px 2px 2px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 18px;
+        color: rgba(1,1,1,1);
+        text-shadow: -2px -2px 2px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 2px 2px 2px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES TIKTOK*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES TIKTOK*/
+#conte-redes-sociales-tiktok-icon{
+
+    width: 40%;
+    height: 55%;   
+    background-color: rgba(0,0,0,1);
+    border-radius: 12%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1px;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES TIKTOK*/
+
+
+/*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ /*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ 
+/*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/
+
+
+
+
+
+
+/*TABLE MENU*/ /*TABLE MENU*/ /*TABLE MENU*/ /*TABLE MENU*/ /*TABLE MENU*/ /*TABLE MENU*/ /*TABLE MENU*/ /*TABLE MENU*//*TABLE MENU*/ /*TABLE MENU*/
+
+.columna-tabla-menu{
+
+    background-color: black;
+}
+
+.espacios-tablas{
+
+    font-size: 5px;
+    color: black;
+
+}
+
+.tabla-precios table tr, td{
+
+    border: 1px solid rgba(125,125,125,0.1);
+    font-size: 25px;
+
+}
+
+.id-titulo-menu{
+
+    background-color: rgba(0,0,0,1);
+    border-top: 0.5px solid rgba(235,235,235,1);
+}
+
+.titulo-menu{
+
+    font-family: MiFuenteFashionismLight;
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 1px rgba(255,186,155,1),3px 3px 2px rgba(255,8,5,1);
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.tittle-menu-medidas{
+
+    font-family: MiFuenteFashionismLight;
+    color: rgba(0,0,0,1);
+    font-size: 33px; 
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.menu-medidas{
+
+    font-family: MiFuenteFashionismLight;
+    color: rgba(235,235,235,1);
+    font-size: 24px; 
+    text-align: center;
+
+}
+
+.menu-medidas span{
+
+    text-align: center;
+}
+
+.tittlemenu{
+
+    font-family: MiFuenteDDayStenceil;
+    color: rgba(0,0,0,1);
+    font-size: 36px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.tittlemenubebidas{
+
+    font-family: MiFuenteFashionismLight;
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+    font-size: 36px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.nombreproducto {
+
+    font-family: MiFuenteJamesStroker;
+    color: rgba(235,235,235,1);
+    font-size: 28px;
+    text-align: left;
+
+}
+
+
+.nombreproducto-tradicional {
+
+    font-family: MiFuenteJamesStroker;
+    color: rgba(255,126,5,1);
+    font-size: 28px;
+    text-align: left;
+}
+
+.nombreproducto-bebidas-postres{
+
+    font-family: sans-serif;
+    color: rgba(245,245,245,1);
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.precio-producto-menu-bebidas-postres{
+
+    font-family: sans-serif;
+    color: rgba(245,245,245,1);
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.precio-producto-menu{
+
+    font-family: MiFuenteJamesStroker;
+    color: rgba(245,245,245,1);
+    font-size: 22px;
+    text-align: center;
+
+}
+
+
+.precio-producto-menu-tradicional{
+
+    font-family: MiFuenteJamesStroker;
+    color: rgba(255,126,5,1);
+    font-size: 22px;
+    text-align: center;
+
+}
+
+.descripcion-producto-table{
+
+    font-family: sans-serif;
+    color: rgba(245,245,245,1);
+    font-size: 16px;
+    text-align: left;
+}
+
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+/*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/
+
+/*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/ /*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/
+/*COLUMNA IZQUIERDA*/
+.columna-pagina-inicio-nombre-empresa{
+
+    height: 45vh;
+
+}
+/*COLUMNA IZQUIERDA*/
+
+/*ESTILOS COLUMNA IZQUIERDA NOMBRE EMPRESA E IMAGEN PIZZA*/
+
+
+.pagina-inicio-nombre-empresa-imagen-pizza{
+
+    width: 60%;
+   
+}
+
+/*ESTILOS COLUMNA IZQUIERDA NOMBRE EMPRESA E IMAGEN PIZZA*/
+/*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/ /*COLUMNA IZQUIERDA PÁGINA DE INICIO CON NOMBRE EMPRESA*/
+
+
+/*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ /*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ 
+.columna-pagina-inicio-redes-sociales{
+
+    height: 40vh;
+     justify-content: flex-start;
+
+}
+
+.conte-redes-sociales-transparencia{
+
+    width: 85%;
+    height: 85%;
+
+}
+
+/*ESTILO GENERAL CONTENEDOR ÍCONOS REDES SOCIALES*/
+
+
+
+.contenedor-icono-redes-gradient{
+
+    width: 30%;
+    height: 55%;
+    border: 1px solid rgba(255,255,255,1);
+    box-shadow: 1px 2px 1px rgba(255,255,255,0.5), -1px 0px 1px rgba(255,255,255,0.5), inset 0px 5px 2px rgba(255,255,255,0.4);
+    top: 22.5%;
+    left: 35% 
+
+}
+
+.fa-users{
+
+    font-size: 24px;
+
+}
+
+.tiktok-icon-tresd{
+
+    font-size: 22px; 
+    text-shadow: -1px -1px 1px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 1px 1px 1px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+
+}
+/*ESTILO GENERAL CONTENEDOR ÍCONOS REDES SOCIALES*/
+
+
+/*ESTILOS TEXTO REDES SOCIALES FACEBOOK*/
+
+
+#facebook-parrafo{
+
+    line-height: 1.4;
+
+}
+
+#facebook-parrafo span{
+
+    font-size: 18px;
+}
+
+@keyframes ajustartextofacebook{
+
+    0%{
+        font-size: 8px;
+        opacity:0.3;
+    }
+    50%{
+        font-size: 10px;
+        opacity:0.5;
+    }
+    100%{
+        font-size: 12px;
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES FACEBOOK*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES FACEBOOK*/
+#conte-redes-sociales-facebook-icon{
+
+    width: 30%;
+    padding-bottom: 0;
+}
+
+/*ESTILOS ÍCONOS REDES SOCIALES FACEBOOK*/
+
+
+/*ESTILOS TEXTO REDES SOCIALES INSTAGRAM*/
+
+#instagram-parrafo{
+
+    line-height: 1.6;
+}
+
+#instagram-parrafo span{
+
+    font-family: MiFuentePizza;
+    font-size: 16px;
+
+}
+
+
+@keyframes ajustartextoinstagram{
+
+    0%{
+        font-size: 8px;
+        color: rgba(255,255,255,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 12px;
+        color: rgba(255,255,255,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 14px;
+        color: rgba(255,255,255,1);
+        opacity:1;
+    }
+}
+
+/*ESTILOS TEXTO REDES SOCIALES INSTAGRAM*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES INSTAGRAM*/
+#conte-redes-sociales-instagram-icon{
+
+    width: 30%;
+    padding-bottom: 0;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES INSTAGRAM*/
+
+/*ESTILOS TEXTO REDES SOCIALES WHATSAPP*/
+
+#whatsapp-parrafo{
+
+      line-height: 2.2;
+
+}
+
+@keyframes ajustartextowhatsapp{
+
+    0%{
+        font-size: 8px;
+        color: rgba(255,255,255,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 12px;
+        color: rgba(255,255,255,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 14px;
+        color: rgba(255,255,255,1);
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES WHATSAPP*/
+
+
+/*ESTILOS ÍCONOS REDES SOCIALES WHATSAPP*/
+#conte-redes-sociales-whatsapp-icon{
+
+    width: 30%;
+    padding-bottom: 0;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES WHATSAPP*/
+
+/*ESTILOS TEXTO REDES SOCIALES TELEGRAM*/
+
+#telegram-parrafo{
+
+    line-height: 2.2;
+
+}
+
+@keyframes ajustartextotelegram{
+
+    0%{
+        font-size: 8px;
+        color: rgba(255,255,255,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 12px;
+        color: rgba(255,255,255,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 14px;
+        color: rgba(255,255,255,1);
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES TELEGRAM*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES TELEGRAM*/
+#conte-redes-sociales-telegram-icon{
+
+    width: 30%;
+    padding-bottom: 0;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES TELEGRAM*/
+
+/*ESTILOS TEXTO REDES SOCIALES TIKTOK*/
+#tiktok-parrafo{
+
+    line-height: 2.2;
+
+}
+
+@keyframes ajustartextotiktok{
+
+    0%{
+        font-size: 8px;
+        color: rgba(1,1,1,1);
+        text-shadow: -2px -2px 2px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 2px 2px 2px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+        opacity:0.3;
+    }
+    50%{
+        font-size: 12px;
+        color: rgba(1,1,1,1);
+        text-shadow: -px -2px 2px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 2px 2px 2px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+        opacity:0.5;
+    }
+    100%{
+        font-size: 14px;
+        color: rgba(1,1,1,1);
+        text-shadow: -1px -1px 1px  rgba(0,242,234,1),-1px -1px 1px  rgba(0,242,234,1), 1px 1px 1px rgba(255,0,80,1), 1px 1px 1px rgba(255,0,80,1);
+        opacity:1;
+    }
+}
+/*ESTILOS TEXTO REDES SOCIALES TIKTOK*/
+
+/*ESTILOS ÍCONOS REDES SOCIALES TIKTOK*/
+#conte-redes-sociales-tiktok-icon{
+
+    width: 30%;
+    padding-bottom: 0;
+}
+/*ESTILOS ÍCONOS REDES SOCIALES TIKTOK*/
+
+
+/*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ /*COLUMNA DERECHA PÁGINA DE INICIO CON REDES SOCIALES*/ 
+/*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/ /*CONTENEDOR SUPERIOR PÁGINA DE INICIO, NOMBRE EMPRESA Y REDES SOCIALES*/
+
+
+
+
+
+
+    /*CLASE CARRUSEL 1*/ /*CLASE CARRUSEL 1*/ /*CLASE CARRUSEL 1*/ /*CLASE CARRUSEL 1*/ /*CLASE CARRUSEL 1*/ /*CLASE CARRUSEL 1*/ /*CLASE CARRUSEL 1*/ 
+
+    .tittlemenu{
+
+        font-size: 24px;
+        text-align: left    ;
+    }
+
+    .nombreproducto {
+
+        color: rgba(255,136,56,1);
+        font-size: 22px;
+
+    }
+
+    .espacio-tittle-menu{
+
+        background-color: rgba(255,255,255,0.9);
+
+    }
+
+}
+
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS FIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+

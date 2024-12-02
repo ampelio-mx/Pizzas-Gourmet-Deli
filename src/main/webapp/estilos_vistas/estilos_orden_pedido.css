@@ -1,0 +1,427 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'MiFuenteCreativo'; /* Nombre que le das a la fuente */
+    src: url('../estilos_paginas_comunes/fuentes_paginas_comunes/Creativo Italic.otf') format('truetype'); /* Ruta donde se encuentra la fuente */
+}
+
+body{
+
+    width: 100%;  
+    height: 90vh;
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+
+}
+
+.contenedor-tablas-pedido{
+
+    width: 100%;  
+    height: 100%;
+    margin-top: 10vh;
+}
+
+.fila-tablas-pedido{
+
+    width: 100%;  
+    height: 100%;
+}
+
+.columna-tablas-pedido{
+
+    height: 90vh;
+
+}
+/*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/
+.contenedor-tittle-pedido{
+
+    width: 100%;
+    height: 15vh;
+
+}
+
+.columna-tittle-pedido{
+
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.conte-tittle-pedido{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.conte-tittle-pedido h2{
+
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgba(255,85,6,1); 
+
+}
+/*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/ /*CONTENEDOR TÍTULO*/
+
+/*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ 
+.contenedor-datos-cliente{
+
+    width: 100%;
+    height: 15vh;
+
+}
+
+.columna-datos-cliente{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.tabla-orden-pedido-datos-cliente{
+
+    width: 100%;
+
+}
+
+#tabla-datos-cliente{
+
+    width: 100%;
+
+}
+
+#cabecero-tabla-cliente tr{
+
+
+
+}
+
+#head-tabla-cliente{
+
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgba(255,255,255,1);
+    background-color: rgba(15,15,15,0.5);
+}
+
+.tabla-cliente-body-col, .tabla-cliente-body-col-fecha{
+
+
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: rgba(255,255,255,1); 
+    padding-left: 10px;
+    padding-right:  10px;
+
+}
+/*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ /*CONTENEDOR DATOS CLIENTE*/ 
+
+
+/*CONTENEDOR DATOS PEDIDO*/  /*CONTENEDOR DATOS PEDIDO*/ /*CONTENEDOR DATOS PEDIDO*/ /*CONTENEDOR DATOS PEDIDO*/ /*CONTENEDOR DATOS PEDIDO*/ 
+.contenedor-datos-orden{
+
+    width: 100%;
+    height: 50vh;
+    margin-top: 10vh;
+    overflow-y: auto;
+
+}
+
+.columna-datos-orden{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tabla-orden-pedido-datos-pedido{
+
+    width: 100%;
+
+}
+
+#tabla-datos-pedido{
+
+    width: 100%;
+
+}
+/*CONTENEDOR DATOS PEDIDO*/  /*CONTENEDOR DATOS PEDIDO*/ /*CONTENEDOR DATOS PEDIDO*/ /*CONTENEDOR DATOS PEDIDO*/ /*CONTENEDOR DATOS PEDIDO*/ 
+
+.columna-link-codigo-qr{
+
+    height: 90vh;
+    margin-top: 10vh;
+}
+.contenedor-enlace-qr{
+
+    width: 100%;
+    height: 100%
+
+}
+.fila-enlace-qr{
+
+    width: 100%;
+    height: 100%;
+
+}
+.columna-enlace-qr{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.importe-total-pagar{
+
+    width: 100%;
+    height: 30vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-text-conte{
+
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+
+}
+
+#total-text{
+
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+    color: rgba(255,255,255,1); 
+    font-weight: bold;   
+
+}
+.importe-conte{
+
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.importe-conte h2{
+
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0;
+    color: rgba(255,255,255,1); 
+
+}
+
+/*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/
+
+#conte-boton-envio{
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#conte-boton-pago-clip{
+
+    width: 80%;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+#boton-pago-clip{
+
+    width: 100%;
+    height: 5vh;
+    background-image: url("../imagenes_vistas/naranja_neutral_sin_sombra.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: 1px solid rgba(255,145,26,1);  
+
+}
+
+.formulario-boton-mostrador{
+
+    width: 80%;
+    height: 5vh;
+    margin-bottom: 4vh;
+}
+
+.boton-guardar-pedido-efectivo{
+
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255,255,255,1);
+    box-shadow: inset 0px 2px 4px 0px rgba(255,145,26,1),inset 0px 5px 6px 0px rgba(255,205,86,1), inset 0px 8px 9px 0px rgba(255,245,136,1),
+        inset 0px -2px 4px 0px rgba(255,145,26,1),inset 0px -5px 6px 0px rgba(255,205,86,1), inset 0px -8px 9px 0px rgba(255,245,136,1),
+        inset 2px 0px 3px 0px rgba(255,145,26,1), inset 8px 0px 9px 0px rgba(255,245,136,1),                    
+        inset -2px 0px 3px 0px rgba(255,145,26,1), inset -8px 0px 9px 0px rgba(255,245,136,1);
+    border: 2px solid rgba(255,145,26,1); 
+    border-radius: 25px;
+}
+
+.boton-guardar-pedido-regresar{
+
+    width: 80%;
+    height: 5vh;
+    background-color: rgba(255,255,255,1);
+    box-shadow: inset 0px 2px 4px 0px rgba(255,145,26,1),inset 0px 5px 6px 0px rgba(255,205,86,1), inset 0px 8px 9px 0px rgba(255,245,136,1),
+        inset 0px -2px 4px 0px rgba(255,145,26,1),inset 0px -5px 6px 0px rgba(255,205,86,1), inset 0px -8px 9px 0px rgba(255,245,136,1),
+        inset 2px 0px 3px 0px rgba(255,145,26,1), inset 8px 0px 9px 0px rgba(255,245,136,1),                    
+        inset -2px 0px 3px 0px rgba(255,145,26,1), inset -8px 0px 9px 0px rgba(255,245,136,1);
+    border: 2px solid rgba(255,145,26,1); 
+    border-radius: 25px;
+}
+
+/*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/ /*CONTENEDOR BOTONES*/
+
+
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*@MEDIA QUERYS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*media querys medium*/
+@media (max-width:768px){
+
+
+
+    .columna-tablas-pedido{
+
+        height: 45vh;
+
+    }
+
+    .contenedor-tittle-pedido{
+
+        width: 100%;
+        height: 10vh;
+    }
+
+    .columna-tittle-pedido{
+
+        height: 10vh;
+
+    }
+
+    .contenedor-datos-cliente{
+
+
+        height: 10vh;
+    }
+
+    .contenedor-datos-orden{
+
+
+        height: 20vh;
+        margin-top: 5vh;
+    }
+
+    .columna-link-codigo-qr{
+
+        height: 45vh;
+        margin-top: 0vh;
+    }
+
+
+    .importe-total-pagar{
+
+
+        height: 15vh;
+        margin-top: 0;
+    }
+
+    .total-text-conte{
+
+
+        height: 7.5vh;
+
+    }
+
+    .importe-conte{
+
+
+        height: 7.5vh;
+
+    }
+
+
+    #conte-boton-envio{
+
+        height: 30vh;
+
+    }
+
+
+    .tabla-orden-pedido-datos-cliente{
+
+        width: 100%;
+
+    }
+
+    .tabla-orden-pedido-datos-pedido{
+
+        width: 100%;
+
+    }
+
+    .tabla-cliente-body-col-fecha{
+
+        min-width: 35vw;
+    }
+
+    .conte-tittle-pedido{
+
+        justify-content: center;
+
+    }
+
+    .conte-tittle-pedido h2{
+
+        font-size: 46px;
+
+    }
+}
+
+
+

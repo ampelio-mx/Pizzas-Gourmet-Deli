@@ -1,0 +1,207 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*ESTILOS CONTENEDOR*/
+.contenedor-administrador-login{
+
+    margin-top: 10vh; 
+    background-image: linear-gradient(0deg,rgba(255,85,6,1),rgba(1,1,1,1));
+
+}
+/*ESTILOS CONTENEDOR*/
+
+/*COLUMNA IZQUIERDA*/ /*COLUMNA IZQUIERDA*/ /*COLUMNA IZQUIERDA*/
+.columna-administrador-login-left{
+
+    height: 90vh;
+}
+/*COLUMNA IZQUIERDA*/ /*COLUMNA IZQUIERDA*/ /*COLUMNA IZQUIERDA*/
+
+/*COLUMNA DERECHA*/ /*COLUMNA DERECHA*/ /*COLUMNA DERECHA*/
+.columna-administrador-login-right{
+
+    height: 90vh;
+    position: relative;
+}
+
+/*CONTENEDOR TRANSPARENCIA*/
+#formulario-transparencia{
+
+    width: 60%;
+    height: 50%;    
+    background-color: rgba(255,255,255,0);
+    background-image: linear-gradient(135deg,rgba(255,255,255,0.5)3%,rgba(255,255,255,0.3)17%,rgba(135,135,135,0.1)33%, rgba(255,255,255,0.5)54.9%,rgba(255,255,255,0.6)55%, rgba(255,255,255,0.5)55.1%,rgba(15,15,15,0.1)80%,rgba(190,190,190,0.2)90%,rgba(255,255,255,0.3)96%);   
+    border-radius: 8%;
+    border: 0.3px solid rgba(255,255,255,1);
+    box-shadow: inset -2px -2px 7px 0 rgba(255,255,255,0.3), inset 2px 0px 7px 0 rgba(255,255,255,0.3);
+    filter: blur(1px);
+    -webkit-filter: blur(0.9px); 
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+/*CONTENEDOR TRANSPARENCIA*/
+
+/*ESTILOS PARA EL CONTENEDOR DE LOS DOS FORMULARIOS*/
+#contenedor-formulario-administrador-login{
+
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+
+}
+
+/*FORMULARIO UNO*/
+#formulario-uno{
+    width: 100%;  
+    height: 70%; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fieldsetclase-uno{
+
+    width: 100%;  
+    height: 75%; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+#titulo-registro{
+    width: 100%;  
+    height: 50%;  
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tabla-primera-cajas-formulario{
+
+    width: 100%;
+    height: 50%;
+
+}
+
+.cajasform{
+
+    border-radius: 7px;
+    width: 80%;
+    height:3vh;
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+.fieldsetclase-dos{
+
+    width: 100%;  
+    height: 25%; 
+    display: flex;
+    flex-direction: column;
+}
+
+#tabla-segunda-boton-formulario{
+
+    width: 100%;
+    height: 100%; 
+}
+
+
+#boton{
+
+    width: 80%;
+    height: 5vh;
+    background-color: rgba(195,165,110,1);
+    background-image: linear-gradient(0deg, rgba(255,255,115,1)0%,rgba(255,255,115,1)23%,rgba(255,255,255,1)24%, rgba(255,126,5,1)33%,rgba(255,255,115,1)95%); 
+    box-shadow: inset 3px 2px 4px rgba(255,126,5,1), inset -3px 0px 4px rgba(255,126,5,1);
+    border:none;
+    border-radius: 4px;
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 2px rgba(255,186,155,1),2px 2px 2px rgba(255,8,5,1);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10%;
+
+
+}
+
+#pBoton{
+
+
+    color:white;
+    text-align:center;
+}
+/*FORMULARIO UNO*/
+
+/*ESTILOS PARA EL CONTENEDOR DE LOS DOS FORMULARIOS*/
+
+
+#label-password-failure{
+    
+    width: 60%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+
+    
+}
+
+.parrafo-user-pass-failure{
+    
+   width: 100%;
+   height: 3vh;
+   position: absolute;
+   top: 10%;
+   left: 0%;
+   font-size: 12px;
+   color: rgba(255,255,255,1);
+   font-weight: bold;
+   text-align: center;
+}
+/*COLUMNA DERECHA*/ /*COLUMNA DERECHA*/ /*COLUMNA DERECHA*/
+
+@media (max-width:768px){
+    
+    
+    .columna-administrador-login-left{
+        
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
